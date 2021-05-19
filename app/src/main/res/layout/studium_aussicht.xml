@@ -24,5 +24,4 @@
             tools:ignore="MissingConstraints" />
 
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
