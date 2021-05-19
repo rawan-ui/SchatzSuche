@@ -9,8 +9,6 @@ import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.schatzsuche.databinding.ItemDataBinding;
-
 import java.util.ArrayList;
 
 public class StudiumDetailsRecylerAdapter extends RecyclerView.Adapter<StudiumDetailsRecylerAdapter.MyViewHolder> {
