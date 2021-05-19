@@ -20,6 +20,7 @@
         </activity>
         <activity android:name=".Studiums"/>
         <activity android:name=".StudiumDetails"/>
+        <activity android:name=".StudiumMaster"/>
     </application>
 
 </manifest>

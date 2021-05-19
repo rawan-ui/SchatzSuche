@@ -24,7 +24,7 @@ public class StudiumDetailsRecylerAdapter extends RecyclerView.Adapter<StudiumDe
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.studium_course_result, parent, false);
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.studium_aussicht, parent, false);
         return new MyViewHolder(itemView);
     }
 
@@ -32,9 +32,10 @@ public class StudiumDetailsRecylerAdapter extends RecyclerView.Adapter<StudiumDe
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
         String name = lvs.get(position).getName();
-        //String ss = lvs.get(position).getMinimum();
+        Integer ects = lvs.get(position).getECTS();
+
         holder.nametxt.setText(name);
-       // holder.ects.setText(ss);
+        holder.ects.setText(ects.toString());
     }
 
     @Override
@@ -46,11 +47,11 @@ public class StudiumDetailsRecylerAdapter extends RecyclerView.Adapter<StudiumDe
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
         private TextView nametxt;
-        //private TextView ects;
+        private TextView ects;
         public MyViewHolder(final View view) {
             super(view);
-            nametxt = view.findViewById(R.id.tv);
-            //ects = view.findViewById(R.id.ectss);
+            nametxt = view.findViewById(R.id.nameLv);
+            ects = view.findViewById(R.id.ectsText);
         }
 
     }
