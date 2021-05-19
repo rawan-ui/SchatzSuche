@@ -16,7 +16,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.gson.Gson;
 
 public class MainActivity extends AppCompatActivity {
-    TextView quoteText;
     Button searchButton;
     EditText coursePerson;
     Button bachelorStudies;
@@ -38,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void setUpUi() {
         pseudoDatabase = new PseudoDatabase();
-      //  quoteText = findViewById(R.id.uniInfo);
         searchButton = findViewById(R.id.searchButton);
         coursePerson = findViewById(R.id.coursePersonView);
         bachelorStudies = findViewById(R.id.bachelorButton);
@@ -87,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 pseudoDatabase = new PseudoDatabase();
                 pseudoDatabase.createMasterStudium();
-                Intent intent = new Intent(MainActivity.this, Studiums.class);
+                Intent intent = new Intent(MainActivity.this, StudiumMaster.class);
                 startActivity(intent);
             }
         });

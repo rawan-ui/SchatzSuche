@@ -41,7 +41,7 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.DataVH> {
         return list.size();
     }
 
-    class DataVH extends RecyclerView.ViewHolder {
+    static class DataVH extends RecyclerView.ViewHolder {
         ItemDataBinding binding;
 
         public DataVH(@NonNull ItemDataBinding binding) {

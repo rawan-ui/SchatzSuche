@@ -5,9 +5,7 @@ import java.util.Vector;
 
 public class PseudoDatabase {
 
-
     public Studium createMasterStudium(){
-
         Vector<Veranstaltung>lv = new Vector<>();
         String motivation = "Für die Lehrveranstaltung werden die Kenntnisse aus vorsemestrigen LV als bekannt vorausgesetzt. Diese werden vertieft und erweitert. \n" +
                 "In der Vorlesung werden die Stoffinhalte in Form eines Frontalvortrags vermittelt. In den Übungseinheiten werden die erworbenen Kenntnisse praktisch umgesetzt, indem Lösungen zu vorgegebenen Problemstellungen gefunden werden.";
@@ -114,12 +112,12 @@ public class PseudoDatabase {
         // PSEUDO FUNKTION: Rufe Daten für Person ab und füge die Personen in den result Vector ein
         for(int i = 0; i < personsFound.size(); i++) {
             Vector<String> lv = new Vector<String>();
-            lv.add("OV Orientierungsveranstaltung");
-            lv.add("VU Programmierung 1");
-            lv.add("VU Modellierung");
-            lv.add("UE Network Security");
-            lv.add("UE Betriebssysteme");
-            lv.add("VU Mensch-Computer-Interaktion");
+            lv.add("• OV Orientierungsveranstaltung");
+            lv.add("• VU Programmierung 1");
+            lv.add("• VU Modellierung");
+            lv.add("• UE Network Security");
+            lv.add("• UE Betriebssysteme");
+            lv.add("• VU Mensch-Computer-Interaktion");
             String name = personsFound.elementAt(i);
             Person p = new Person(name,"https://images.freeimages.com/images/large-previews/adf/sun-burst-1478549.jpg", "mustermail@univie.ac.at", "+43 100 200 300", "Sonntag, 18 Uhr", lv);
 
