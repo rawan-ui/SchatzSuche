@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SchatzSuche</string>
+    <string name="searchForPersonCourse">search for a course/person...</string>
+    <string name="Person">Person</string>
+    <string name="course">Course</string>
+    <string name="teaching">Teaching:</string>
+    <string name="informatik_fakultaet">Informatik Fakultaet</string>
+    <string name="textview">TextView</string>
+    <string name="informatik_fakultat">Informatik fakultät</string>
+</resources>
